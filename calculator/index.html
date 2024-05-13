@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <script defer src="https://pro.fontawesome.com/releases/v5.10.0/js/all.js" integrity="sha384-G/ZR3ntz68JZrH4pfPJyRbjW+c0+ojii5f+GYiYwldYU69A+Ejat6yIfLSxljXxD" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <div class="container">
+    <input type="text"name="screen"id="screen">
+
+    <table>
+        <tr>
+            <td colspan="2" onclick="clearResult()"><button id="clearbtn" class="active">C</button></td>
+            <td><button onclick="removeChart()"><i class="fas fa-backspace active"></i></button></td>
+            <td><button onclick="number('%')" class="active">%</button></td>
+        </tr>
+        <tr>
+            <td><button onclick="number('7')" class="active">7</button></td>
+            <td><button onclick="number('8')" class="active">8</button></td>
+            <td><button onclick="number('9')" class="active">9</button></td>
+            <td><button onclick="number('*')" class="active">X</button></td>
+        </tr>
+        <tr>
+            <td><button onclick="number('4')" class="active">4</button></td>
+            <td><button onclick="number('5')" class="active">5</button></td>
+            <td><button onclick="number('6')" class="active">6</button></td>
+            <td><button onclick="number('-')" class="active">-</button></td>
+        </tr>
+        <tr>
+            <td><button onclick="number('1')" class="active">1</button></td>
+            <td><button onclick="number('2')" class="active">2</button></td>
+            <td><button onclick="number('3')" class="active">3</button></td>
+            <td><button onclick="number('+')" class="active">+</button></td>
+        </tr>
+        <tr>
+            <td><button onclick="number('0')" class="active">0</button></td>
+            <td><button onclick="number('.')" class="active">.</button></td>
+            <td><button onclick="number('/')" class="active">/</button></td>
+            <td><button onclick="result('=')" class="active" id="equal">=</button></td>
+        </tr>
+    </table>
+    </div>
+</body>
+
+<script src="./javascript/index.js"></script>
+</html>
